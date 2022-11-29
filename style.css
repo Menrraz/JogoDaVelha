@@ -31,7 +31,6 @@ body {
 .cell {
     width: 93px;
     height: 93px;
-    background-color: gray;
 }
 .cell2 {
     border-right: 2px solid black;

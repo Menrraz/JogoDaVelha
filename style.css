@@ -26,3 +26,8 @@ body {
     height: 280px;
     background: lightgray;
 }
+.cell {
+    width: 90px;
+    height: 90px;
+    background-color: gray;
+}

@@ -33,3 +33,22 @@ body {
     height: 93px;
     background-color: gray;
 }
+.cell2 {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+.cell4 {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.cell5 {
+    border: 2px solid black;
+}
+.cell6 {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+.cell8 {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}

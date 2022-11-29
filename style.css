@@ -25,6 +25,8 @@ body {
     width: 280px;
     height: 280px;
     background: lightgray;
+    display: grid;
+    grid-template-columns: auto auto auto; 
 }
 .cell {
     width: 90px;

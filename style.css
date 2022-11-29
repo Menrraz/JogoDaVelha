@@ -21,3 +21,8 @@ body {
     background-color: lightgray;
     color: black;
 }
+.board {
+    width: 280px;
+    height: 280px;
+    background: lightgray;
+}

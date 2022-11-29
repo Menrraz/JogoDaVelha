@@ -29,8 +29,8 @@ body {
     grid-template-columns: auto auto auto; 
 }
 .cell {
-    width: 93px;
-    height: 93px;
+    width: 93.3px;
+    height: 93.3px;
 }
 .cell2 {
     border-right: 2px solid black;

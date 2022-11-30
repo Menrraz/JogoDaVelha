@@ -1,5 +1,5 @@
 function twoPlayers() {
-
+    createBoard();
 }
 function createBoard() {
     document.querySelector(".start-section").remove(); // Remove initial menu

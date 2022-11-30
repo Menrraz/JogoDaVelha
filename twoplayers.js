@@ -19,3 +19,6 @@ function createBoard() {
         </section>
     `);
 }
+function play(player, cell) {
+
+}

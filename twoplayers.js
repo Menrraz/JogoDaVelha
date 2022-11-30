@@ -19,6 +19,6 @@ function createBoard() {
         </section>
     `);
 }
-function play(player, cell) {
+function play(player, pCell) {
 
 }

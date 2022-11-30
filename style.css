@@ -32,6 +32,9 @@ body {
     width: 93.3px;
     height: 93.3px;
 }
+.cell:hover {
+    background: rgb(192, 192, 192);
+}
 .cell2 {
     border-right: 2px solid black;
     border-left: 2px solid black;

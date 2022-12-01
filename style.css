@@ -64,3 +64,10 @@ body {
 .icon {
     font-size: 70px;
 }
+.icon-player1 {
+    font-size: 80px; /*Different sizes because the X seens small even with the same pxs*/
+    color: rgb(0, 68, 255);
+}
+.icon-player2 {
+    color: red;
+}

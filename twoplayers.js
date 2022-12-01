@@ -26,6 +26,9 @@ function play(pCell) {
     let iconClass = player == 1 ? "fa-solid fa-xmark": "fa-regular fa-circle";
     if (markedCells.indexOf(pCell) == -1) {
         markedCells.push(pCell);
+        cell.insertAdjacentHTML('beforeend', `
+        <i class="${iconClass} icon icon-player${player}"></i>
+        `);
     } else if (markedCells.length == 9) {
         // End game
     }

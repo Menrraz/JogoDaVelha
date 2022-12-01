@@ -1,4 +1,5 @@
 let player = 1; // 1 = Player X (first) | 2 = Player O
+let [markedCells, playerXCells, playerOCells] = [[], [], []];
 function twoPlayers() {
     createBoard();
 }

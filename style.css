@@ -61,3 +61,6 @@ body {
     border-right: 2px solid black;
     border-left: 2px solid black;
 }
+.icon {
+    font-size: 70px;
+}

@@ -24,5 +24,7 @@ function play(pCell) {
     let cell = document.querySelector(`.cell${pCell}`);
     if (markedCells.indexOf(pCell) == -1) {
         markedCells.push(pCell);
+    } else if (markedCells.length == 9) {
+        // End game
     }
 }

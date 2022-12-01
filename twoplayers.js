@@ -20,6 +20,6 @@ function createBoard() {
         </section>
     `);
 }
-function play(player, pCell) {
+function play(pCell) {
     let cell = document.querySelector(`.cell${pCell}`);
 }

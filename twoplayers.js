@@ -22,4 +22,7 @@ function createBoard() {
 }
 function play(pCell) {
     let cell = document.querySelector(`.cell${pCell}`);
+    if (markedCells.indexOf(pCell) == -1) {
+        markedCells.push(pCell);
+    }
 }

@@ -21,5 +21,5 @@ function createBoard() {
     `);
 }
 function play(player, pCell) {
-    let cell = document.querySelector(`.${pCell}`);
+    let cell = document.querySelector(`.cell${pCell}`);
 }

@@ -22,6 +22,8 @@ function createBoard() {
 }
 function play(pCell) {
     let cell = document.querySelector(`.cell${pCell}`);
+    // If player 1, so icon X. if player 2, so icon O
+    let iconClass = player == 1 ? "fa-solid fa-xmark": "fa-regular fa-circle";
     if (markedCells.indexOf(pCell) == -1) {
         markedCells.push(pCell);
     } else if (markedCells.length == 9) {

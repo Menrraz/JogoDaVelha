@@ -32,4 +32,5 @@ function play(pCell) {
     } else if (markedCells.length == 9) {
         // End game
     }
+    player = player == 1 ? 2: 1; // next turn, next player
 }

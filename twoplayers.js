@@ -36,5 +36,7 @@ function play(pCell) {
     }
 }
 function checkResult(pMarkedCells, xCells, oCells) {
-
+    if (pMarkedCells.length == 9) {
+        
+    }
 }

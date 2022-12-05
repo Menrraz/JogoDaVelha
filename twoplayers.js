@@ -25,6 +25,7 @@ function play(pCell) {
     let cell = document.querySelector(`.cell${pCell}`);
     // If player 1, so icon X. if player 2, so icon O
     let iconClass = player == 1 ? "fa-solid fa-xmark": "fa-regular fa-circle";
+    markedCells.push(pCell)
     if (markedCells.indexOf(pCell) == -1) {
         markedCells.push(pCell);
         cell.insertAdjacentHTML('beforeend', `

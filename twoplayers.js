@@ -38,6 +38,8 @@ function play(pCell) {
 }
 function checkResult(pMarkedCells, xCells, oCells) {
     if (pMarkedCells.length == 9) {
-
+        document.querySelector('body').insertAdjacentHTML('beforeend', `
+            <div class="end-game-div">Deu velha!</div>
+        `)
     }
 }

@@ -37,3 +37,6 @@ function play(pCell) {
         // End game
     }
 }
+function checkResult(pMarkedCells, xCells, oCells) {
+    
+}

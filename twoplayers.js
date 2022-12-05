@@ -41,5 +41,7 @@ function checkResult(pMarkedCells, xCells, oCells) {
         document.querySelector('body').insertAdjacentHTML('beforeend', `
             <div class="end-game-div">Deu velha!</div>
         `)
+        document.querySelector(".board").style.filter = "grayscale(1)";
+        document.querySelector(".board").style.backgroundColor = "gray";
     }
 }

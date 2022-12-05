@@ -72,3 +72,9 @@ body {
 .icon-player2 {
     color: red;
 }
+.end-game-div {
+    position: absolute;
+    color: white;
+    font-size: 55px;
+    font-weight: bold;
+}

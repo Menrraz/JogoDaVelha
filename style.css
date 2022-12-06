@@ -28,6 +28,8 @@ body {
     background: lightgray;
     display: grid;
     grid-template-columns: auto auto auto; 
+    transition-property: background;
+    transition-duration: 1s;
 }
 .cell {
     width: 93.3px;

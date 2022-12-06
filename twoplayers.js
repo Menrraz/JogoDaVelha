@@ -37,11 +37,14 @@ function play(pCell) {
     }
 }
 function checkResult(pMarkedCells, xCells, oCells) {
+    function endGame() {
+        document.querySelector(".board").style.filter = "grayscale(1)";
+        document.querySelector(".board").style.background = "gray";
+    }
     if (pMarkedCells.length == 9) {
         document.querySelector('body').insertAdjacentHTML('beforeend', `
             <div class="end-game-div">Deu velha!</div>
         `)
-        document.querySelector(".board").style.filter = "grayscale(1)";
-        document.querySelector(".board").style.backgroundColor = "gray";
+        endGame()
     }
 }

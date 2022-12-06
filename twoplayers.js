@@ -40,6 +40,12 @@ function checkResult(pMarkedCells, xCells, oCells) {
     function endGame() {
         document.querySelector(".board").style.filter = "grayscale(1)";
         document.querySelector(".board").style.background = "gray";
+        setTimeout(function(){
+            document.querySelector(".board").style.filter = "grayscale(0)";
+            document.querySelector(".board").style.background = "lightgray";
+            document.querySelector(".end-game-div").remove();
+            document.querySelectorAll('.icon').forEach(icon => {icon.remove()});
+        }, 2000)
     }
     if (pMarkedCells.length == 9) {
         document.querySelector('body').insertAdjacentHTML('beforeend', `

@@ -46,6 +46,7 @@ function checkResult(pMarkedCells, xCells, oCells) {
             document.querySelector(".end-game-div").remove();
             document.querySelectorAll('.icon').forEach(icon => {icon.remove()});
         }, 2000)
+        markedCells = [] // Reset game
     }
     if (pMarkedCells.length == 9) {
         document.querySelector('body').insertAdjacentHTML('beforeend', `

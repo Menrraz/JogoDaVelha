@@ -48,6 +48,18 @@ function checkResult(pMarkedCells, xCells, oCells) {
         }, 2000)
         markedCells = [] // Reset game
     }
+    function checkWinner() {
+        let wins = [
+            [1,2,3],
+            [4,5,6],
+            [7,8,9],
+            [7,4,1],
+            [8,5,2],
+            [9,6,3],
+            [7,5,3],
+            [9,5,1],
+        ];
+    }
     if (pMarkedCells.length == 9) {
         document.querySelector('body').insertAdjacentHTML('beforeend', `
             <div class="end-game-div">DEU VELHA!</div>

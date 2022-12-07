@@ -46,7 +46,10 @@ function checkResult(pMarkedCells, xCells, oCells) {
             document.querySelector(".end-game-div").remove();
             document.querySelectorAll('.icon').forEach(icon => {icon.remove()});
         }, 2000)
-        markedCells = [] // Reset game
+        // Reset all stats
+        markedCells = [];
+        playerXCells = [];
+        playerOCells = [];
     }
     function checkWinner() {
         let wins = [

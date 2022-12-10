@@ -62,6 +62,22 @@ function checkResult(pMarkedCells, xCells, oCells) {
             [7,5,3],
             [9,5,1],
         ];
+        for(let i = 1; i <= 2; i++) {
+            let playerCells = i == 1 ? xCells: oCells; // Define the player
+            for (let p = 0; p < wins.length; p++) {
+                let winner = 0;
+                for (let j = 0; j < playerCells.length; j++) {
+                    for (let k = 0; k < wins[p].length; k++) {
+                        if (wins[p][k] == playerCells[j]) {
+                            winner++;
+                        }
+                        if (winner == 3) {
+                            endGame()
+                        }
+                    }
+                }
+            }
+        }
     }
     if (pMarkedCells.length == 9) {
         document.querySelector('body').insertAdjacentHTML('beforeend', `
@@ -69,4 +85,5 @@ function checkResult(pMarkedCells, xCells, oCells) {
         `)
         endGame()
     }
+    checkWinner();
 }

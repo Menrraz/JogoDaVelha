@@ -82,11 +82,14 @@ function checkResult(pMarkedCells, xCells, oCells) {
         }
         return false;
     }
-    if (pMarkedCells.length == 9) {
+    if (checkWinner() == true) {
+        endGame();
+        console.log("checkWinner")
+    } else if (pMarkedCells.length == 9) {
+        console.log("Velha")
         document.querySelector('body').insertAdjacentHTML('beforeend', `
             <div class="end-game-div">DEU VELHA!</div>
         `)
         endGame()
     }
-    checkWinner();
 }

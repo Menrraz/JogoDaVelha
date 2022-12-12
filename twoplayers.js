@@ -73,7 +73,7 @@ function checkResult(pMarkedCells, xCells, oCells) {
                             winner++;
                         }
                         if (winner == 3) {
-                            return playerCells;
+                            return i;
                         }
                     }
                 }

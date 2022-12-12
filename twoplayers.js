@@ -82,7 +82,7 @@ function checkResult(pMarkedCells, xCells, oCells) {
         }
         return false;
     }
-    if (checkWinner() == true) {
+    if (checkWinner() !== false) {
         endGame();
         console.log("checkWinner")
     } else if (pMarkedCells.length == 9) {

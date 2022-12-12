@@ -74,7 +74,7 @@ function checkResult(pMarkedCells, xCells, oCells) {
                         }
                         if (winner == 3) {
                             endGame()
-                            return true;
+                            return playerCells;
                         }
                     }
                 }

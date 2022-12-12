@@ -32,6 +32,7 @@ function play(pCell) {
         <i class="${iconClass} icon icon-player${player}"></i>
         `);
         player = player == 1 ? 2: 1; // next turn, next player
+        document.querySelector(".whos-next-icon").remove();
         document.querySelector(".whos-next").innerHTML = "É a vez do " + `<i class='${player == 1 ? "fa-solid fa-xmark": "fa-regular fa-circle"} icon-player${player}'></i>`;
         checkResult(markedCells, playerXCells, playerOCells);
     }

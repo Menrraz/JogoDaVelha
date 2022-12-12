@@ -74,11 +74,13 @@ function checkResult(pMarkedCells, xCells, oCells) {
                         }
                         if (winner == 3) {
                             endGame()
+                            return true;
                         }
                     }
                 }
             }
         }
+        return false;
     }
     if (pMarkedCells.length == 9) {
         document.querySelector('body').insertAdjacentHTML('beforeend', `

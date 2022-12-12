@@ -73,7 +73,6 @@ function checkResult(pMarkedCells, xCells, oCells) {
                             winner++;
                         }
                         if (winner == 3) {
-                            endGame()
                             return playerCells;
                         }
                     }

@@ -7,7 +7,7 @@ function createBoard() {
     document.querySelector(".start-section").remove(); // Remove initial menu
     let body = document.querySelector('body');
     body.insertAdjacentHTML('beforeend', `
-        <p class="whos-next">É a vez do <i class="fa-solid fa-xmark whos-next-icon"></i></p>
+        <p class="whos-next">É a vez do <i class="fa-solid fa-xmark whos-next-icon icon-player1"></i></p>
         <section class='board'>
             <div class="cell cell1" onclick="play(1)"></div>
             <div class="cell cell2" onclick="play(2)"></div>

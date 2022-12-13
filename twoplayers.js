@@ -73,13 +73,13 @@ function checkResult(pMarkedCells, xCells, oCells) {
                             winner++;
                         }
                         if (winner == 3) {
-                            return i;
+                            return {"winner": i, "win": wins[p]};
                         }
                     }
                 }
             }
         }
-        return false;
+        return {"winner": false};
     }
     if (checkWinner() !== false) {
         endGame();

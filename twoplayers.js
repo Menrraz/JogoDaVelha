@@ -29,7 +29,7 @@ function play(pCell) {
         markedCells.push(pCell);
         player == 1 ? playerXCells.push(pCell) : playerOCells.push(pCell);
         cell.insertAdjacentHTML('beforeend', `
-        <i class="${iconClass} icon icon-player${player}"></i>
+        <i class="${iconClass} icon icon-player${player} iconCell${pCell}"></i>
         `);
         player = player == 1 ? 2: 1; // next turn, next player
         document.querySelector(".whos-next-icon").remove();

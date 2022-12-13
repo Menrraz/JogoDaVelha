@@ -82,7 +82,6 @@ function checkResult(pMarkedCells, xCells, oCells) {
         return {"winner": false};
     }
     if (checkWinner().winner !== false) {
-        endGame();
         document.querySelector('body').insertAdjacentHTML('beforeend', `
             <div class="end-game-div"> Vencedor
                 ${checkWinner().winner == 1 ? "<i class='fa-solid fa-xmark'></i>": "<i class='fa-regular fa-circle'></i>"}
@@ -95,6 +94,7 @@ function checkResult(pMarkedCells, xCells, oCells) {
                 try {document.querySelector(`.iconCell${i}`).style.color = "#6a6a6a"}catch{}
             }
         }
+        endGame();
     } else if (pMarkedCells.length == 9) {
         document.querySelector('body').insertAdjacentHTML('beforeend', `
             <div class="end-game-div">DEU VELHA!</div>

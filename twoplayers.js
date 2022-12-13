@@ -38,7 +38,7 @@ function play(pCell) {
     }
 }
 function checkResult(pMarkedCells, xCells, oCells) {
-    function endGame() {
+    function endGame(wins) {
         document.querySelector(".board").style.filter = "grayscale(1)";
         document.querySelector(".board").style.background = "gray";
         setTimeout(function(){

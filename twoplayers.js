@@ -81,11 +81,11 @@ function checkResult(pMarkedCells, xCells, oCells) {
         }
         return {"winner": false};
     }
-    if (checkWinner() !== false) {
+    if (checkWinner().winner !== false) {
         endGame();
         document.querySelector('body').insertAdjacentHTML('beforeend', `
             <div class="end-game-div"> Vencedor
-                ${checkWinner() == 1 ? "<i class='fa-solid fa-xmark'></i>": "<i class='fa-regular fa-circle'></i>"}
+                ${checkWinner().winner == 1 ? "<i class='fa-solid fa-xmark'></i>": "<i class='fa-regular fa-circle'></i>"}
             </div>
         `);
     } else if (pMarkedCells.length == 9) {

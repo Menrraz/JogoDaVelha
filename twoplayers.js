@@ -87,8 +87,8 @@ function checkResult(pMarkedCells, xCells, oCells) {
                 ${checkWinner().winner == 1 ? "<i class='fa-solid fa-xmark'></i>": "<i class='fa-regular fa-circle'></i>"}
             </div>
         `);
+        let win = checkWinner().win;
         for (let i = 1; i <= 9; i++) {
-            let win = checkWinner().win;
             // Paint all cells except the ones that make the player wins
             if (win.indexOf(i) == -1) {
                 try {document.querySelector(`.iconCell${i}`).style.color = "#6a6a6a"}catch{}

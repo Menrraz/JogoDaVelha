@@ -39,6 +39,14 @@ function play(pCell) {
 }
 function checkResult(pMarkedCells, xCells, oCells) {
     function endGame(wins) {
+        if (wins !== undefined) {
+            for (let i = 1; i <= 9; i++) {
+                // Paint all cells except the ones that make the player wins
+                if (wins.indexOf(i) == -1) {
+                    try {document.querySelector(`.iconCell${i}`).style.color = "#6a6a6a"}catch{}
+                }
+            } 
+        }
         document.querySelector(".board").style.background = "gray";
         setTimeout(function(){
             document.querySelector(".board").style.background = "lightgray";
@@ -86,12 +94,6 @@ function checkResult(pMarkedCells, xCells, oCells) {
             </div>
         `);
         let win = checkWinner().win;
-        for (let i = 1; i <= 9; i++) {
-            // Paint all cells except the ones that make the player wins
-            if (win.indexOf(i) == -1) {
-                try {document.querySelector(`.iconCell${i}`).style.color = "#6a6a6a"}catch{}
-            }
-        }
         endGame();
     } else if (pMarkedCells.length == 9) {
         document.querySelector('body').insertAdjacentHTML('beforeend', `

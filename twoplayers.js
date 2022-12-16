@@ -47,8 +47,10 @@ function checkResult(pMarkedCells, xCells, oCells) {
                 }
             } 
         }
+        if (wins=='tie'){document.querySelector(".board").style.filter = "grayscale(1)"};
         document.querySelector(".board").style.background = "gray";
         setTimeout(function(){
+            if (wins=='tie'){document.querySelector(".board").style.filter = "grayscale(0)"};
             document.querySelector(".board").style.background = "lightgray";
             document.querySelectorAll('.icon').forEach(icon => {icon.remove()});
         }, 2000)

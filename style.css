@@ -90,6 +90,12 @@ body {
     justify-content: space-around;
     margin-top: 20px;
 }
+.scoreboard div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 .scoreboard .x-scores i {
     font-size: 30px;
     color: rgb(0, 68, 255);

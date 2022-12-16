@@ -39,10 +39,8 @@ function play(pCell) {
 }
 function checkResult(pMarkedCells, xCells, oCells) {
     function endGame(wins) {
-        document.querySelector(".board").style.filter = "grayscale(1)";
         document.querySelector(".board").style.background = "gray";
         setTimeout(function(){
-            document.querySelector(".board").style.filter = "grayscale(0)";
             document.querySelector(".board").style.background = "lightgray";
             document.querySelector(".end-game-div").remove();
             document.querySelectorAll('.icon').forEach(icon => {icon.remove()});

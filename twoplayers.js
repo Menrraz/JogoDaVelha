@@ -50,7 +50,6 @@ function checkResult(pMarkedCells, xCells, oCells) {
         document.querySelector(".board").style.background = "gray";
         setTimeout(function(){
             document.querySelector(".board").style.background = "lightgray";
-            document.querySelector(".end-game-div").remove();
             document.querySelectorAll('.icon').forEach(icon => {icon.remove()});
         }, 2000)
         // Reset all stats

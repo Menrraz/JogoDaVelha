@@ -92,6 +92,6 @@ function checkResult(pMarkedCells, xCells, oCells) {
         let win = checkWinner().win;
         endGame(win);
     } else if (pMarkedCells.length == 9) {
-        endGame()
+        endGame('tie')
     }
 }

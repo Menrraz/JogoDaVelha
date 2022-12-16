@@ -39,6 +39,7 @@ function play(pCell) {
 }
 function checkResult(pMarkedCells, xCells, oCells) {
     function endGame(wins) {
+        document.querySelector(".board").style.pointerEvents = "none"
         if (wins !== undefined) {
             for (let i = 1; i <= 9; i++) {
                 // Paint all cells except the ones that make the player wins
@@ -53,6 +54,7 @@ function checkResult(pMarkedCells, xCells, oCells) {
             if (wins=='tie'){document.querySelector(".board").style.filter = "grayscale(0)"};
             document.querySelector(".board").style.background = "lightgray";
             document.querySelectorAll('.icon').forEach(icon => {icon.remove()});
+            document.querySelector(".board").style.pointerEvents = "auto"
         }, 2000)
         // Reset all stats
         markedCells = [];

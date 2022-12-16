@@ -90,3 +90,14 @@ body {
     justify-content: space-around;
     margin-top: 20px;
 }
+.scoreboard .x-scores i {
+    font-size: 30px;
+    color: rgb(0, 68, 255);
+}
+.scoreboard .o-scores i {
+    font-size: 25px;
+    color: red;
+}
+.scoreboard .tie-scores i {
+    font-size: 30px;
+}

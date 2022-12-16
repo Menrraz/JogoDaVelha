@@ -19,6 +19,20 @@ function createBoard() {
             <div class="cell cell8" onclick="play(8)"></div>
             <div class="cell cell9" onclick="play(9)"></div>
         </section>
+        <section class="scoreboard">
+        <div class="x-scores">
+            <i class="fa-solid fa-xmark"></i>
+            <p class="p=score"></p>
+        </div>
+        <div class="tie-scores">
+            <i>-</i>
+            <p class="p=score"></p>
+        </div>
+        <div class="o-scores">
+            <i class="fa-regular fa-circle"></i>
+            <p class="p=score"></p>
+        </div>
+    </section>
     `);
 }
 function play(pCell) {

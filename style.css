@@ -84,10 +84,3 @@ body {
 .icon-player2 {
     color: red;
 }
-.end-game-div {
-    position: absolute;
-    color: white;
-    font-size: 50px;
-    text-align: center;
-    font-weight: bold;
-}

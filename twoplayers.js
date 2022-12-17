@@ -53,20 +53,20 @@ function play(pCell) {
     }
 }
 function checkResult(pMarkedCells, xCells, oCells) {
-    function endGame(wins) {
+    function endGame(result) {
         document.querySelector(".board").style.pointerEvents = "none"
-        if (wins !== undefined) {
+        if (result !== undefined) {
             for (let i = 1; i <= 9; i++) {
                 // Paint all cells except the ones that make the player wins
-                if (wins.indexOf(i) == -1) {
+                if (result.indexOf(i) == -1) {
                     try {document.querySelector(`.iconCell${i}`).style.color = "#6a6a6a"}catch{}
                 }
             } 
         }
-        if (wins=='tie'){document.querySelector(".board").style.filter = "grayscale(1)"};
+        if (result=='tie'){document.querySelector(".board").style.filter = "grayscale(1)"};
         document.querySelector(".board").style.background = "gray";
         setTimeout(function(){
-            if (wins=='tie'){document.querySelector(".board").style.filter = "grayscale(0)"};
+            if (result=='tie'){document.querySelector(".board").style.filter = "grayscale(0)"};
             document.querySelector(".board").style.background = "lightgray";
             document.querySelectorAll('.icon').forEach(icon => {icon.remove()});
             document.querySelector(".board").style.pointerEvents = "auto"

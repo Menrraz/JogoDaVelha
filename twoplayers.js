@@ -1,5 +1,6 @@
 let player = 1; // 1 = Player X (first) | 2 = Player O
 let [markedCells, playerXCells, playerOCells] = [[], [], []];
+let [xScore, oScore, tieScore] = [0, 0, 0];
 function twoPlayers() {
     createBoard();
 }

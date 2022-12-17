@@ -23,15 +23,15 @@ function createBoard() {
         <section class="scoreboard">
         <div class="x-scores">
             <i class="fa-solid fa-xmark"></i>
-            <p class="p=score">0</p>
+            <p class="p-x-score">0</p>
         </div>
         <div class="tie-scores">
             <i>-</i>
-            <p class="p=score">0</p>
+            <p class="p-tie-score">0</p>
         </div>
         <div class="o-scores">
             <i class="fa-regular fa-circle"></i>
-            <p class="p=score">0</p>
+            <p class="p-o-score">0</p>
         </div>
     </section>
     `);

@@ -71,6 +71,7 @@ function checkResult(pMarkedCells, xCells, oCells) {
             document.querySelectorAll('.icon').forEach(icon => {icon.remove()});
             document.querySelector(".board").style.pointerEvents = "auto"
         }, 2000)
+        updateScore(result);
         // Reset all stats
         markedCells = [];
         playerXCells = [];

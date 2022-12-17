@@ -76,6 +76,16 @@ function checkResult(pMarkedCells, xCells, oCells) {
         playerXCells = [];
         playerOCells = [];
     }
+    function updateScore(result) {
+        if (result == "tie") {
+            tieScore++;
+            document.querySelector('.p-tie-score').innerHTML = tieScore;
+        } else {
+            checkWinner().winner == 1 ? xScore++: oScore++;
+            document.querySelector('.p-x-score').innerHTML = xScore;
+            document.querySelector('.p-o-score').innerHTML = oScore;
+        }
+    }
     function checkWinner() {
         let wins = [
             [1,2,3],

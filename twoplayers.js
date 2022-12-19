@@ -45,6 +45,8 @@ function play(pCell) {
         cell.insertAdjacentHTML('beforeend', `
         <i class="${iconClass} icon icon-player${player} iconCell${pCell}"></i>
         `);
+        document.querySelector(`.${player == 1 ? 'x': 'o'}-scores`).style.filter = "grayscale(1)";
+        document.querySelector(`.${player == 1 ? 'o': 'x'}-scores`).style.filter = "grayscale(0)";
         player = player == 1 ? 2: 1; // next turn, next player
         checkResult(markedCells, playerXCells, playerOCells);
     }

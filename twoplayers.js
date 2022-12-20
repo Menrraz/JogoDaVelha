@@ -9,15 +9,15 @@ function createBoard(mode) {
     let body = document.querySelector('body');
     body.insertAdjacentHTML('beforeend', `
         <section class='board'>
-            <div class="cell cell1" onclick="play(1)"></div>
-            <div class="cell cell2" onclick="play(2)"></div>
-            <div class="cell cell3" onclick="play(3)"></div>
-            <div class="cell cell4" onclick="play(4)"></div>
-            <div class="cell cell5" onclick="play(5)"></div>
-            <div class="cell cell6" onclick="play(6)"></div>
-            <div class="cell cell7" onclick="play(7)"></div>
-            <div class="cell cell8" onclick="play(8)"></div>
-            <div class="cell cell9" onclick="play(9)"></div>
+            <div class="cell cell1" onclick="${mode=='one'?'user':''}play(1)"></div>
+            <div class="cell cell2" onclick="${mode=='one'?'user':''}play(2)"></div>
+            <div class="cell cell3" onclick="${mode=='one'?'user':''}play(3)"></div>
+            <div class="cell cell4" onclick="${mode=='one'?'user':''}play(4)"></div>
+            <div class="cell cell5" onclick="${mode=='one'?'user':''}play(5)"></div>
+            <div class="cell cell6" onclick="${mode=='one'?'user':''}play(6)"></div>
+            <div class="cell cell7" onclick="${mode=='one'?'user':''}play(7)"></div>
+            <div class="cell cell8" onclick="${mode=='one'?'user':''}play(8)"></div>
+            <div class="cell cell9" onclick="${mode=='one'?'user':''}play(9)"></div>
         </section>
         <section class="scoreboard">
         <div class="x-scores">

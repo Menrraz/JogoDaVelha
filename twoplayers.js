@@ -4,7 +4,7 @@ let [xScore, oScore, tieScore] = [0, 0, 0];
 function twoPlayers() {
     createBoard();
 }
-function createBoard() {
+function createBoard(mode) {
     document.querySelector(".start-section").remove(); // Remove initial menu
     let body = document.querySelector('body');
     body.insertAdjacentHTML('beforeend', `

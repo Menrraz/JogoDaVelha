@@ -1,3 +1,3 @@
 function onePlayer() {
-    
+    createBoard('one');
 }

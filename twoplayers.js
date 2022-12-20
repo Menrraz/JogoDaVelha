@@ -3,6 +3,7 @@ let gamemode;
 let [markedCells, playerXCells, playerOCells] = [[], [], []];
 let [xScore, oScore, tieScore] = [0, 0, 0];
 function twoPlayers() {
+    gamemode = 2;
     createBoard();
 }
 function createBoard(mode) {

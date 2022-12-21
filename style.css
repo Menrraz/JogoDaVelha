@@ -110,3 +110,6 @@ body {
 .scoreboard .tie-scores i {
     font-size: 30px;
 }
+.scoreboard p {
+    font-size: 20px;
+}

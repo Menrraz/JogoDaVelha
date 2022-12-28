@@ -15,6 +15,7 @@ function botPlay() {
     ];
     for (let i = 0; i < wins.length; i++) {
         let xChance = 0; // Bot wants to stops this variable to get to 3, otherwise it loses.
+        let oChance = 0; // Bot wants to turn it into a 3, so it wins
         for (let j = 0; j < playerXCells.length; j++) {
             for (let k = 0; k < 3; k++) {
                 // Play where prevent user victory
@@ -23,6 +24,17 @@ function botPlay() {
                 }
                 if (xChance == 2 && player == 2) {
                     let nextPlay = wins[i].filter(x => !playerXCells.includes(x)); 
+                    if (markedCells.indexOf(nextPlay[0]) == -1) {
+                        player = 2;
+                        play(nextPlay[0]);
+                    }
+                }
+                // Plays where it wins
+                if (wins[i][k] == playerOCells[j]) {
+                    oChance++;
+                }
+                if (oChance == 2 && player == 2) {
+                    let nextPlay = wins[i].filter(x => !playerOCells.includes(x));
                     if (markedCells.indexOf(nextPlay[0]) == -1) {
                         player = 2;
                         play(nextPlay[0]);

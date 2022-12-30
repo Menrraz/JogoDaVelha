@@ -123,5 +123,5 @@ function checkResult(pMarkedCells, xCells, oCells) {
     } else if (pMarkedCells.length == 9) {
         endGame('tie')
     }
-    if (gamemode == 1) {botPlay();}
+    if (gamemode == 1 && player == 2) {botPlay();}
 }

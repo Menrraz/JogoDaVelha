@@ -123,5 +123,14 @@ function checkResult(pMarkedCells, xCells, oCells) {
     } else if (pMarkedCells.length == 9) {
         endGame('tie')
     }
-    if (gamemode == 1 && player == 2) {botPlay();}
+    if (gamemode == 1 && player == 2) {
+        // Prevents user to be able to play while bot plays
+        document.querySelector(".board").style.pointerEvents = "none";
+        // If the game ends bot has to wait a little more to play
+        if (checkWinner().winner !== false || pMarkedCells.length == 9) {
+            setTimeout(botPlay, 2500);
+        } else {
+            setTimeout(botPlay, 500);
+        }
+    }
 }

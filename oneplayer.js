@@ -42,5 +42,17 @@ function botPlay() {
                 }
             }
         }
+        // Plays in a random cell
+        let nextPlay = Math.floor(Math.random()*10)
+        if ((xChance < 2 || oChance < 2) && i == 7 && player == 2) {
+            while (true) {
+                nextPlay = nextPlay == 0 ? Math.floor(Math.random()*10): nextPlay;
+                nextPlay = markedCells.indexOf(nextPlay) == -1 ? nextPlay: Math.floor(Math.random()*10)
+                if (nextPlay !== 0) {
+                    if (markedCells.indexOf(nextPlay) == -1) {break;}
+                }
+            }
+            play(nextPlay);
+        }
     }
 }

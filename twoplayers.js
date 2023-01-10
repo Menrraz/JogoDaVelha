@@ -53,77 +53,13 @@ function play(pCell) {
         checkResult(markedCells, playerXCells, playerOCells);
     }
 }
-function checkResult(pMarkedCells, xCells, oCells) {
-    function endGame(result) {
-        document.querySelector(".board").style.pointerEvents = "none"
-        if (result !== undefined) {
-            for (let i = 1; i <= 9; i++) {
-                // Paint all cells except the ones that make the player wins
-                if (result.indexOf(i) == -1) {
-                    try {document.querySelector(`.iconCell${i}`).style.color = "#6a6a6a"}catch{}
-                }
-            } 
-        }
-        if (result=='tie'){document.querySelector(".board").style.filter = "grayscale(1)"};
-        document.querySelector(".board").style.background = "gray";
-        setTimeout(function(){
-            if (result=='tie'){document.querySelector(".board").style.filter = "grayscale(0)"};
-            document.querySelector(".board").style.background = "lightgray";
-            document.querySelectorAll('.icon').forEach(icon => {icon.remove()});
-            document.querySelector(".board").style.pointerEvents = "auto"
-        }, 2000)
-        updateScore(result);
-        // Reset all stats
-        markedCells = [];
-        playerXCells = [];
-        playerOCells = [];
-    }
-    function updateScore(result) {
-        if (result == "tie") {
-            tieScore++;
-            document.querySelector('.p-tie-score').innerHTML = tieScore;
-        } else {
-            checkWinner().winner == 1 ? xScore++: oScore++;
-            document.querySelector('.p-x-score').innerHTML = xScore;
-            document.querySelector('.p-o-score').innerHTML = oScore;
-        }
-    }
-    function checkWinner() {
-        let wins = [
-            [1,2,3],
-            [4,5,6],
-            [7,8,9],
-            [7,4,1],
-            [8,5,2],
-            [9,6,3],
-            [7,5,3],
-            [9,5,1],
-        ];
-        for(let i = 1; i <= 2; i++) {
-            let playerCells = i == 1 ? xCells: oCells; // Define the player
-            for (let p = 0; p < wins.length; p++) {
-                let winner = 0;
-                for (let j = 0; j < playerCells.length; j++) {
-                    for (let k = 0; k < wins[p].length; k++) {
-                        if (wins[p][k] == playerCells[j]) {
-                            winner++;
-                        }
-                        if (winner == 3) {
-                            return {"winner": i, "win": wins[p]};
-                        }
-                    }
-                }
-            }
-        }
-        return {"winner": false};
-    }
+function checkResult(pMarkedCells) {
     if (checkWinner().winner !== false) {
-        let win = checkWinner().win;
-        endGame(win);
+        endGame(checkWinner().win);
     } else if (pMarkedCells.length == 9) {
-        endGame('tie')
+        endGame("tie");
     }
-    if (gamemode == 1) {
+    if (gamemode == 1 && player == 2) {
         // Prevents user to be able to play while bot plays
         document.querySelector(".board").style.pointerEvents = "none";
         // If the game ends bot has to wait a little more to play
@@ -133,4 +69,67 @@ function checkResult(pMarkedCells, xCells, oCells) {
             setTimeout(botPlay, 500);
         }
     }
+}
+function endGame(result) {
+    document.querySelector(".board").style.pointerEvents = "none"
+    if (result !== undefined) {
+        for (let i = 1; i <= 9; i++) {
+            // Paint all cells except the ones that make the player wins
+            if (result.indexOf(i) == -1) {
+                try {document.querySelector(`.iconCell${i}`).style.color = "#6a6a6a"}catch{}
+            }
+        } 
+    }
+    if (result=='tie'){document.querySelector(".board").style.filter = "grayscale(1)"};
+    document.querySelector(".board").style.background = "gray";
+    setTimeout(function(){
+        if (result=='tie'){document.querySelector(".board").style.filter = "grayscale(0)"};
+        document.querySelector(".board").style.background = "lightgray";
+        document.querySelectorAll('.icon').forEach(icon => {icon.remove()});
+        document.querySelector(".board").style.pointerEvents = "auto"
+    }, 2000)
+    updateScore(result);
+    // Reset all stats
+    markedCells = [];
+    playerXCells = [];
+    playerOCells = [];
+}
+function updateScore(result) {
+    if (result == 'tie') {
+        tieScore++;
+        document.querySelector('.p-tie-score').innerHTML = tieScore;
+    } else {
+        checkWinner().winner == 1 ? xScore++: oScore++;
+        document.querySelector('.p-x-score').innerHTML = xScore;
+        document.querySelector('.p-o-score').innerHTML = oScore;
+    }
+}
+function checkWinner() {
+    let wins = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9],
+        [7,4,1],
+        [8,5,2],
+        [9,6,3],
+        [7,5,3],
+        [9,5,1],
+    ];
+    for(let i = 1; i <= 2; i++) {
+        let playerCells = i == 1 ? playerXCells: playerOCells; // Define the player
+        for (let p = 0; p < wins.length; p++) {
+            let winner = 0;
+            for (let j = 0; j < playerCells.length; j++) {
+                for (let k = 0; k < wins[p].length; k++) {
+                    if (wins[p][k] == playerCells[j]) {
+                        winner++;
+                    }
+                    if (winner == 3) {
+                        return {"winner": i, "win": wins[p]};
+                    }
+                }
+            }
+        }
+    }
+    return {"winner": false};
 }

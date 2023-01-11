@@ -54,12 +54,13 @@ function play(pCell) {
     }
 }
 function checkResult(pMarkedCells) {
+    let isGameOver = checkWinner().winner !== false ? true : false;
     if (checkWinner().winner !== false) {
         endGame(checkWinner().win);
     } else if (pMarkedCells.length == 9) {
         endGame("tie");
     }
-    if (gamemode == 1 && player == 2) {
+    if (gamemode == 1 && player == 2 && isGameOver == false) {
         // Prevents user to be able to play while bot plays
         document.querySelector(".board").style.pointerEvents = "none";
         // If the game ends bot has to wait a little more to play

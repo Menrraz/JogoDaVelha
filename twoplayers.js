@@ -1,5 +1,6 @@
 let player = 1; // 1 = Player X (first) | 2 = Player O
 let gamemode;
+let isGameOver;
 let [markedCells, playerXCells, playerOCells] = [[], [], []];
 let [xScore, oScore, tieScore] = [0, 0, 0];
 function twoPlayers() {
@@ -54,7 +55,7 @@ function play(pCell) {
     }
 }
 function checkResult(pMarkedCells) {
-    let isGameOver = checkWinner().winner !== false ? true : false;
+    isGameOver = checkWinner().winner !== false ? true : false;
     if (checkWinner().winner !== false) {
         endGame(checkWinner().win);
     } else if (pMarkedCells.length == 9) {

@@ -71,6 +71,8 @@ function checkResult(pMarkedCells) {
             setTimeout(botPlay, 500);
         }
     }
+    isGameOver == true ? setTimeout(botPlay, 2500) : ''
+    isGameOver = false;
 }
 function endGame(result) {
     document.querySelector(".board").style.pointerEvents = "none"

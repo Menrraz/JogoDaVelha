@@ -54,6 +54,5 @@ function botPlay() {
             }
             play(nextPlay);
         }
-        document.querySelector(".board").style.pointerEvents = "auto"; // Makes user able to play again
     }
 }

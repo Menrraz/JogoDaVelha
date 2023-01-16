@@ -63,19 +63,21 @@ function checkResult(pMarkedCells) {
     }
     if (gamemode == 1 && player == 2 && isGameOver == false) {
         // Prevents user to be able to play while bot plays
-        document.querySelector(".board").style.pointerEvents = "none";
+        blockBoard();
         // If the game ends bot has to wait a little more to play
         if (checkWinner().winner !== false || pMarkedCells.length == 9) {
             setTimeout(botPlay, 2500);
+            setTimeout(blockBoard, 2500);
         } else {
             setTimeout(botPlay, 500);
+            setTimeout(blockBoard, 500);
         }
     }
     isGameOver == true ? setTimeout(botPlay, 2500) : ''
     isGameOver = false;
 }
 function endGame(result) {
-    document.querySelector(".board").style.pointerEvents = "none"
+    blockBoard();
     if (result !== undefined) {
         for (let i = 1; i <= 9; i++) {
             // Paint all cells except the ones that make the player wins
@@ -90,7 +92,7 @@ function endGame(result) {
         if (result=='tie'){document.querySelector(".board").style.filter = "grayscale(0)"};
         document.querySelector(".board").style.background = "lightgray";
         document.querySelectorAll('.icon').forEach(icon => {icon.remove()});
-        document.querySelector(".board").style.pointerEvents = "auto"
+        blockBoard();
     }, 2000)
     updateScore(result);
     // Reset all stats
@@ -136,4 +138,10 @@ function checkWinner() {
         }
     }
     return {"winner": false};
+}
+let block = 'none'
+function blockBoard() {
+    console.log(block)
+    document.querySelector(".board").style.pointerEvents = block;
+    block = block == 'auto' ? 'none' : 'auto'
 }

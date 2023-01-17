@@ -22,6 +22,9 @@ body {
     background-color: lightgray;
     color: black;
 }
+.start-section input[type="button"]:hover {
+    background-color: rgb(187, 187, 187);
+}
 .board {
     width: 280px;
     height: 280px;

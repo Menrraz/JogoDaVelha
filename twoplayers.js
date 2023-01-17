@@ -50,6 +50,8 @@ function play(pCell) {
         `);
         document.querySelector(`.${player == 1 ? 'x': 'o'}-scores`).style.filter = "grayscale(1)";
         document.querySelector(`.${player == 1 ? 'o': 'x'}-scores`).style.filter = "grayscale(0)";
+        document.querySelector(`.${player == 1 ? 'x': 'o'}-scores-icon`).style.transform = "scale(1)";
+        document.querySelector(`.${player == 1 ? 'o': 'x'}-scores-icon`).style.transform = "scale(1.2)";
         player = player == 1 ? 2: 1; // next turn, next player
         checkResult(markedCells, playerXCells, playerOCells);
     }

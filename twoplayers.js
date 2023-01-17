@@ -141,7 +141,6 @@ function checkWinner() {
 }
 let block = 'none'
 function blockBoard() {
-    console.log(block)
     document.querySelector(".board").style.pointerEvents = block;
     block = block == 'auto' ? 'none' : 'auto'
 }

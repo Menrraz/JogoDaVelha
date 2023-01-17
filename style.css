@@ -25,6 +25,9 @@ body {
 .start-section input[type="button"]:hover {
     background-color: rgb(187, 187, 187);
 }
+.start-section input[type="button"]:active {
+    transform: scale(0.95);
+}
 .board {
     width: 280px;
     height: 280px;

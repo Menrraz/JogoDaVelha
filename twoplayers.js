@@ -24,7 +24,7 @@ function createBoard() {
         </section>
         <section class="scoreboard">
         <div class="x-scores">
-            <i class="fa-solid fa-xmark"></i>
+            <i class="fa-solid fa-xmark x-scores-icon"></i>
             <p class="p-x-score">0</p>
         </div>
         <div class="tie-scores">
@@ -32,7 +32,7 @@ function createBoard() {
             <p class="p-tie-score">0</p>
         </div>
         <div class="o-scores">
-            <i class="fa-regular fa-circle"></i>
+            <i class="fa-regular fa-circle o-scores-icon"></i>
             <p class="p-o-score">0</p>
         </div>
     </section>

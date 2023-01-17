@@ -82,6 +82,7 @@ body {
 }
 .icon {
     font-size: 70px;
+    text-shadow: 3px 3px 4px #0000005e;
 }
 .icon-player1 {
     font-size: 90px; /*Different sizes because the X seens small even with the same pxs*/

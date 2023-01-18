@@ -1,6 +1,6 @@
 function onePlayer() {
     gamemode = 1;
-    createBoard('one');
+    createBoard();
 }
 function botPlay() {
     let wins = [

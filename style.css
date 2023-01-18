@@ -28,6 +28,17 @@ body {
 .start-section input[type="button"]:active {
     transform: scale(0.95);
 }
+.back-icon {
+    color: black;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    font-size: 20px;
+    border: 1px solid gray;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
 .board {
     width: 280px;
     height: 280px;

@@ -100,6 +100,7 @@ body {
 .scoreboard .x-scores i {
     font-size: 30px;
     color: rgb(0, 68, 255);
+    transform: scale(1.2);
 }
 .scoreboard .o-scores {
     filter: grayscale(1);

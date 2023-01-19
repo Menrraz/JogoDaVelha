@@ -7,3 +7,4 @@ function start(){
         </section>
     `)
 }
+start();

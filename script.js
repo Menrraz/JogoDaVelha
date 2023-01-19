@@ -1,4 +1,4 @@
-(function (){
+function start(){
         let warning = document.querySelector('.warning').remove() // Remove warning about required javacript activation
         document.querySelector('body').insertAdjacentHTML('beforeend', `
             <section class="start-section">
@@ -7,4 +7,3 @@
             </section>
         `)
     }
-)()

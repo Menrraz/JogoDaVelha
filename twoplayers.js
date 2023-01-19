@@ -12,7 +12,7 @@ function createBoard() {
     let body = document.querySelector('body');
     body.insertAdjacentHTML('beforeend', `
     <main>
-    <i class="fa-solid fa-arrow-left back-icon" onclick="back()"></i>
+        <i class="fa-solid fa-arrow-left back-icon" onclick="back()"></i>
         <section class='board'>
             <div class="cell cell1" onclick="play(1)"></div>
             <div class="cell cell2" onclick="play(2)"></div>
@@ -37,7 +37,7 @@ function createBoard() {
             <i class="fa-regular fa-circle o-scores-icon"></i>
             <p class="p-o-score">0</p>
         </div>
-    </section>
+        </section>
     </main>
     `);
 }

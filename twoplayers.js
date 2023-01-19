@@ -11,6 +11,7 @@ function createBoard() {
     document.querySelector(".start-section").remove(); // Remove initial menu
     let body = document.querySelector('body');
     body.insertAdjacentHTML('beforeend', `
+    <main>
     <i class="fa-solid fa-arrow-left back-icon" onclick="back()"></i>
         <section class='board'>
             <div class="cell cell1" onclick="play(1)"></div>
@@ -37,6 +38,7 @@ function createBoard() {
             <p class="p-o-score">0</p>
         </div>
     </section>
+    </main>
     `);
 }
 function play(pCell) {

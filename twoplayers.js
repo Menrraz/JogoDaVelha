@@ -149,3 +149,13 @@ function blockBoard() {
     document.querySelector(".board").style.pointerEvents = block;
     block = block == 'auto' ? 'none' : 'auto'
 }
+function back() {
+    // Reset all stats
+    markedCells = [];
+    playerXCells = [];
+    playerOCells = [];
+    player = 1;
+    // Update DOM
+    document.querySelector("main").remove();
+    start();
+}

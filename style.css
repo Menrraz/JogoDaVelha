@@ -28,6 +28,7 @@ body {
 }
 .start-section input[type="button"]:active {
     transform: scale(0.95);
+    box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 60%)
 }
 .back-icon {
     color: black;

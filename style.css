@@ -21,6 +21,7 @@ body {
     font-size: 20px;
     background-color: lightgray;
     color: black;
+    box-shadow: 2px 2px 7px 2px rgb(0 0 0 / 40%);
 }
 .start-section input[type="button"]:hover {
     background-color: rgb(187, 187, 187);

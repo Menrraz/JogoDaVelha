@@ -72,10 +72,10 @@ function checkResult(pMarkedCells) {
         // If the game ends bot has to wait a little more to play
         if (checkWinner().winner !== false || pMarkedCells.length == 9) {
             setTimeout(botPlay, 2500);
-            setTimeout(blockBoard, 2500);
+            blockBoard();
         } else {
             setTimeout(botPlay, 500);
-            setTimeout(blockBoard, 500);
+            blockBoard();
         }
     }
     isGameOver == true ? setTimeout(botPlay, 2500) : ''

@@ -50,10 +50,6 @@ body {
     transition-property: background;
     transition-duration: 1s;
 }
-.whos-next {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
 .cell {
     width: 93.3px;
     height: 93.3px;

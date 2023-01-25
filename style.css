@@ -57,6 +57,16 @@ body {
     align-items: center;
     justify-content: center;
 }
+@media (min-width: 350px) {
+    .board {
+        width: 350px;
+        height: 350px;
+    }
+    .cell {
+        width: 116.6px;
+        height: 116.6px;
+    }
+}
 .cell:hover {
     background: rgb(192, 192, 192);
 }

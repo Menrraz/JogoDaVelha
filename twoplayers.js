@@ -75,7 +75,7 @@ function checkResult(pMarkedCells) {
             blockBoard();
         } else {
             setTimeout(botPlay, 500);
-            blockBoard();
+            setTimeout(blockBoard, 500);
         }
     }
     isGameOver == true ? setTimeout(botPlay, 2500) : ''
@@ -146,6 +146,7 @@ function checkWinner() {
 }
 let block = 'none'
 function blockBoard() {
+    console.log(block)
     document.querySelector(".board").style.pointerEvents = block;
     block = block == 'auto' ? 'none' : 'auto'
 }

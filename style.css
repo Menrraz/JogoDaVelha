@@ -101,6 +101,14 @@ body {
     font-size: 90px; /*Different sizes because the X seens small even with the same pxs*/
     color: rgb(0, 68, 255);
 }
+@media (min-width: 350px) {
+    .icon {
+        font-size: 85px;
+    }
+    .icon-player1 {
+        font-size: 113px;
+    }
+}
 .icon-player2 {
     color: red;
 }

@@ -142,3 +142,20 @@ body {
 .scoreboard p {
     font-size: 20px;
 }
+@media (min-width: 350px) {
+    .scoreboard .x-scores i {
+        font-size: 40px;
+    }
+    .scoreboard .x-scores {
+        gap: 7px;
+    }
+    .scoreboard .o-scores i {
+        font-size: 35px;
+    }
+    .scoreboard .o-scores {
+        gap: 7px;
+    }
+    .scoreboard p {
+        font-size: 25px;
+    }
+}

@@ -67,6 +67,16 @@ body {
         height: 116.6px;
     }
 }
+@media (min-width: 450px) {
+    .board {
+        width: 450px;
+        height: 450px;
+    }
+    .cell {
+        width: 150px;
+        height: 150px;
+    }
+}
 .cell:hover {
     background: rgb(192, 192, 192);
 }

@@ -13,8 +13,8 @@ function start(){
             <footer>
                 <p>Esse site foi feito por um estudante de programação.</p>
                 <div class='footer-icons'>
-                    <a href="https://github.com/Menrraz/JogoDaVelha"><i class="fa-brands fa-square-github"></i></a>
-                    <a href="https://www.linkedin.com/in/guilhermeferrazdev/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Menrraz/JogoDaVelha" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/guilhermeferrazdev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </footer>
         </section>

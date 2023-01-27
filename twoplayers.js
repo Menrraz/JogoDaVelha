@@ -62,6 +62,7 @@ function checkResult(pMarkedCells) {
         endGame("tie");
     }
     if (gamemode == 1 && player == 2 && isGameOver == false) {
+        
         // Prevents user to be able to play while bot plays
         blockBoard();
         // If the game ends bot has to wait a little more to play
@@ -73,7 +74,7 @@ function checkResult(pMarkedCells) {
             setTimeout(blockBoard, 500);
         }
     }
-    isGameOver == true ? setTimeout(botPlay, 2500) : ''
+    isGameOver == true && gamemode == 1 ? setTimeout(botPlay, 2500) : ''
     isGameOver = false;
 }
 function endGame(result) {

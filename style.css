@@ -38,6 +38,10 @@ body {
     position: absolute;
     bottom: 0;
 }
+.start-section footer .footer-icons i{
+    font-size: 25px;
+    margin-right: 7px;
+}
 .back-icon {
     color: black;
     position: absolute;

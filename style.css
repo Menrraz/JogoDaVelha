@@ -13,6 +13,7 @@ body {
 .start-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .start-section input[type="button"] {
     margin-bottom: 20px;

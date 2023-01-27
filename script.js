@@ -12,7 +12,10 @@ function start(){
             <input type='button' value="Dois jogadores" onclick="twoPlayers()" id="twoPlayer">
             <footer>
                 <p>Esse site foi feito por um estudante de programação.</p>
-                <i class="fa-brands fa-square-github"></i><i class="fa-brands fa-linkedin"></i>
+                <div class='footer-icons'>
+                    <i class="fa-brands fa-square-github">
+                    </i><i class="fa-brands fa-linkedin"></i>
+                </div>
             </footer>
         </section>
     `)

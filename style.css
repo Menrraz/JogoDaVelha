@@ -45,6 +45,11 @@ body {
     margin-right: 7px;
     margin-top: 7px;
 }
+@media (hover: hover) {
+    .start-section footer .footer-icons i:hover {
+        color: blue;
+    }
+}
 .start-section footer .footer-icons i:active {
     transform: scale(1.2);
 }

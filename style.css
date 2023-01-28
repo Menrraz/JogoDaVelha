@@ -37,6 +37,7 @@ body {
     box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 60%)
 }
 .start-section footer {
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     text-align: center;

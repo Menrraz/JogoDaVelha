@@ -200,6 +200,7 @@ body {
 }
 .scoreboard p {
     font-size: 20px;
+    font-family: monospace;
 }
 @media (min-width: 350px) {
     .scoreboard .x-scores i {

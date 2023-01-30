@@ -74,6 +74,9 @@ body {
         color: gray;
     }
 }
+.back-icon:active {
+    transform: scale(0.9);
+}
 .board {
     width: 280px;
     height: 280px;

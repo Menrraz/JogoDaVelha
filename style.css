@@ -69,6 +69,11 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
+@media (hover: hover) {
+    .back-icon:hover {
+        color: gray;
+    }
+}
 .board {
     width: 280px;
     height: 280px;

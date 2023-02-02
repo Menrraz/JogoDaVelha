@@ -3,6 +3,7 @@ let gamemode;
 let isGameOver = false;
 let [markedCells, playerXCells, playerOCells] = [[], [], []];
 let [xScore, oScore, tieScore] = [0, 0, 0];
+let body = document.querySelector('body');
 function start(){
     // Remove warning about required javacript activation
     try {document.querySelector('.warning').remove();} catch {}

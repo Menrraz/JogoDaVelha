@@ -1,6 +1,7 @@
 function onePlayer() {
     gamemode = 1;
     createBoard();
+    body.style.height = "100vh";
 }
 function botPlay() {
     let wins = [

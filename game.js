@@ -1,6 +1,7 @@
 function twoPlayers() {
     gamemode = 2;
     createBoard();
+    body.style.height = "100vh";
 }
 function createBoard() {
     document.querySelector(".start-section").remove(); // Remove initial menu

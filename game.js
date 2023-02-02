@@ -152,6 +152,7 @@ function back() {
     playerOCells = [];
     player = 1;
     // Update DOM
+    body.style.height = "90vh";
     document.querySelector("main").remove();
     start();
 }

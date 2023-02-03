@@ -10,7 +10,7 @@
 <p>Enquanto que o arquivo bot.js lida com o modo de jogo sozinho, onde o usuário irá jogar contra o programa.</p>
 <p>A parte mais importante de todo o projeto está aqui. A função que permite o usuário jogar sozinho precisa impedir constantemente a vitória dele e ainda tentar ganhar quando possível.</p>
 <p>Em primeiro lugar, é necessário a criação de um array onde há todas as possibilidades de vitórias. Cada número seria uma célula, com a célula 1 sendo o primeiro quadrado superior esquerdo, e a célula 9 o último quadrado no lado inferior direito</p>
-![Numeração das células](https://i.imgur.com/gHl2hVL.png)
+<img src="https://i.imgur.com/gHl2hVL.png" alt="numeração das células">
 <p>Definindo isso é possível saber quais são as condições de vitória:</p>
 ```
 let wins = [

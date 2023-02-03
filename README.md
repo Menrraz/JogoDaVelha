@@ -12,15 +12,4 @@
 <p>Em primeiro lugar, é necessário a criação de um array onde há todas as possibilidades de vitórias. Cada número seria uma célula, com a célula 1 sendo o primeiro quadrado superior esquerdo, e a célula 9 o último quadrado no lado inferior direito</p>
 <img src="https://i.imgur.com/gHl2hVL.png" alt="numeração das células">
 <p>Definindo isso é possível saber quais são as condições de vitória:</p>
-```
-let wins = [
-        [1,2,3],
-        [4,5,6],
-        [7,8,9],
-        [7,4,1],
-        [8,5,2],
-        [9,6,3],
-        [7,5,3],
-        [9,5,1],
-    ];
-```
+<code>let wins = [[1,2,3],[4,5,6],[7,8,9],[7,4,1],[8,5,2],[9,6,3],[7,5,3],[9,5,1],];</code>

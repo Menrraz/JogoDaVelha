@@ -8,3 +8,19 @@
 <p>O arquivo script.js possuí todas as variáveis globais e cria no DOM toda a página inicial.</p>
 <p>Já o arquivo game.js tem as funções essenciais para o jogo funcionar.</p>
 <p>Enquanto que o arquivo bot.js lida com o modo de jogo sozinho, onde o usuário irá jogar contra o programa.</p>
+<p>A parte mais importante de todo o projeto está aqui. A função que permite o usuário jogar sozinho precisa impedir constantemente a vitória dele e ainda tentar ganhar quando possível.</p>
+<p>Em primeiro lugar, é necessário a criação de um array onde há todas as possibilidades de vitórias. Cada número seria uma célula, com a célula 1 sendo o primeiro quadrado superior esquerdo, e a célula 9 o último quadrado no lado inferior direito</p>
+![Numeração das células](https://imgur.com/a/ZSvOu0Z)
+<p>Definindo isso é possível saber quais são as condições de vitória:</p>
+````
+let wins = [
+        [1,2,3],
+        [4,5,6],
+        [7,8,9],
+        [7,4,1],
+        [8,5,2],
+        [9,6,3],
+        [7,5,3],
+        [9,5,1],
+    ];
+````

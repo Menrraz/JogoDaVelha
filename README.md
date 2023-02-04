@@ -18,3 +18,7 @@
 <p>O terceiro for irá inteirar sobre uma condição específica de vitória, se houve chance de vitória do usuário o bot irá impedir ou irá jogar no lugar onde ele ganha. Em outras palavras, o algoritmo irá sempre buscar primerio impedir a vitória do usuário, para depois buscar a sua própria.</p>
 <img src="https://i.imgur.com/j0zuDSa.png" alt="Imagem do Código" height="50%" width="50%">
 <p>Se tudo isso falhar, o bot jogará em uma célula aleatória.</p>
+<h2>Tecnologias utilizadas</h2>
+- HTML
+- CSS
+- JavaScript

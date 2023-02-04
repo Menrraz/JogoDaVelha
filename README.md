@@ -13,3 +13,8 @@
 <img src="https://i.imgur.com/gHl2hVL.png" alt="numeração das células" height="30%" width="30%">
 <p>Definindo isso é possível saber quais são as condições de vitória:</p>
 <code>let wins = [[1,2,3],[4,5,6],[7,8,9],[7,4,1],[8,5,2],[9,6,3],[7,5,3],[9,5,1]];</code>
+<img src="https://i.imgur.com/DLfyBUu.png" alt="Imagem do Código" height="50%" width="50%">
+<p>O primeiro for irá inteirar sobre todas as condições de vitória. O segundo irá inteirar sobre onde o usuário já jogou para determinar qual a situação do jogo.</p>
+<p>O terceiro for irá inteirar sobre uma condição específica de vitória, se houve chance de vitória do usuário o bot irá impedir ou irá jogar no lugar onde ele ganha. Em outras palavras, o algoritmo irá sempre buscar primerio impedir a vitória do usuário, para depois buscar a sua própria.</p>
+<img src="https://i.imgur.com/j0zuDSa.png" alt="Imagem do Código" height="50%" width="50%">
+<p>Se tudo isso falhar, o bot jogará em uma célula aleatória.</p>

@@ -22,3 +22,6 @@
 - HTML
 - CSS
 - JavaScript
+<h2>Sobre o autor</h2>
+<p>Meu nome é Guilherme e sou um estudante de Análise e Desenvolvimento de Software.</p>
+👤<b>LinkedIn: https://www.linkedin.com/in/guilhermeferrazdev/</b>

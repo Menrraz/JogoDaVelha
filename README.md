@@ -19,9 +19,11 @@
 <img src="https://i.imgur.com/j0zuDSa.png" alt="Imagem do Código" height="50%" width="50%">
 <p>Se tudo isso falhar, o bot jogará em uma célula aleatória.</p>
 <h2>Tecnologias utilizadas</h2>
-- HTML
-- CSS
-- JavaScript
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+</ul>
 <h2>Sobre o autor</h2>
 <p>Meu nome é Guilherme e sou um estudante de Análise e Desenvolvimento de Software.</p>
 👤<b>LinkedIn: https://www.linkedin.com/in/guilhermeferrazdev/</b>
